@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.imrafaelmerino</groupId>
-  <artifactId>mongo-json-values</artifactId>
+  <artifactId>mongo-values</artifactId>
   <packaging>jar</packaging>
   <version>0.1</version>
-  <name>mongo-json-values</name>
+  <name>mongo-values</name>
   <description>Codecs to work with the persistent objects from json-values in MongoDb with the Java driver.</description>
   <url>https://github.com/imrafaelmerino/vertx-actors</url>
   <licenses>
@@ -39,7 +39,7 @@
     <MAVEN-COMPILER-PLUGIN.VERSION>3.1</MAVEN-COMPILER-PLUGIN.VERSION>
     <MAVEN-COMPILER-PLUGIN.SOURCE>8</MAVEN-COMPILER-PLUGIN.SOURCE>
     <MAVEN-COMPILER-PLUGIN.TARGET>8</MAVEN-COMPILER-PLUGIN.TARGET>
-    <JSON-VALUES.VERSION>8.1.2</JSON-VALUES.VERSION>
+    <JSON-VALUES.VERSION>8.4.0</JSON-VALUES.VERSION>
     <MONGO-JAVA-DRIVER.VERSION>4.0.5</MONGO-JAVA-DRIVER.VERSION>
   </properties>
 

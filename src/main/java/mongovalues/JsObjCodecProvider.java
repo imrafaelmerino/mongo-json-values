@@ -1,4 +1,4 @@
-package jsonvalues.mongo;
+package mongovalues;
 
 import jsonvalues.JsObj;
 import org.bson.codecs.BsonTypeClassMap;
@@ -18,7 +18,7 @@ class JsObjCodecProvider implements CodecProvider {
     public <T> Codec<T> get(final Class<T> aclass,
                             final CodecRegistry codecRegistry) {
         if (aclass == JsObj.class) {
-            return (Codec<T>) new JsObjCodec(codecRegistry,typeClassMap);
+            return (Codec<T>) new JsObjCodec(codecRegistry, typeClassMap);
         }
         return null;
     }

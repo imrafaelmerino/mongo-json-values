@@ -1,4 +1,4 @@
-package jsonvalues.mongo;
+package mongovalues;
 
 import jsonvalues.JsBigDec;
 import org.bson.BsonReader;

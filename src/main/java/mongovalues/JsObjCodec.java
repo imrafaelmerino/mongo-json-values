@@ -1,4 +1,4 @@
-package jsonvalues.mongo;
+package mongovalues;
 
 import io.vavr.Tuple2;
 import jsonvalues.JsObj;
@@ -93,20 +93,12 @@ class JsObjCodec extends JsonCodec implements Codec<JsObj> {
       final Tuple2<String, JsValue> entry = it.next();
       writer.writeName(entry._1);
       Codec codec = registry.get(entry._2.getClass());
+      if(codec==null)throw new IllegalStateException("No codec were found for "+entry._2.getClass());
       context.encodeWithChildContext(codec,
                                      writer,
                                      entry._2
                                     );
     }
-  }
-
-  //creo que si el servidor lo añade si no lo hace, para que meter más lógica
-  private void writeIdIfNotPresent(final BsonWriter writer,
-                                   final JsObj obj) {
-    String   id       = obj.getStr(ID_FIELD_NAME);
-    ObjectId objectId = id == null ? new ObjectId() : new ObjectId(id);
-    writer.writeName(ID_FIELD_NAME);
-    writer.writeObjectId(objectId);
   }
 
   @Override

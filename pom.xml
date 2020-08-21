@@ -25,7 +25,7 @@
     </developer>
   </developers>
   <scm>
-    <url>https://github.com/imrafaelmerino/mongo-json-values.git</url>
+    <url>https://github.com/imrafaelmerino/mongo-values.git</url>
   </scm>
 
   <properties>

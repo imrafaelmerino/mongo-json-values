@@ -3,3 +3,14 @@ install: mvn install -DskipTests
 before_install:
 - openssl aes-256-cbc -K $encrypted_b9997e150274_key -iv $encrypted_b9997e150274_iv
   -in key.asc.enc -out key.asc -d
+
+addons:
+  sonarcloud:
+    organization: "imrafaelmerino"
+    token:
+      secure: "txWQlcEZ05JjFfq6VksivsDSO0xIaDa7jBj3quG9P0SXt77RKlHWrZo6Q8ubJNRB+8G/8/Pvn1YNCk2KrhkBFEv6Y12mjH2MLGgi4wKc819bE0UwWaLR1G14Tmx5FMdWmATjC1bbkBOASE1tcF9MkuimYr9fv5Tm0kiLWEv81L3dK4jpM4+esEzjZgyalIWe3MlZxSsMoZkpxJCsfYB+2uyCrRdLlnUSFlyPDTeR0YMbocTtCzcKzwCRM7BZ/y0dbVUUiFFPBfbnULE0putiY9jAXhyetVDox7XTYntM6iDZJ4SkCStdKoD+T5xYFjxah+sNlvI9jZAVj/EYCh90JZlouX80l3LPJq/FYB9b0xA7ZG7NWtyE005SkNyIiRcyMAyVHWMROuGbVqpCGzc5Rd1MjX/bdHlmdHCszumAoJ/9PJXXAqA7sJgDkRmmFpvnVNcPnx3p/zeRW1XoaJjPOozxQ7O1S7lVlhDTomuiJAHUzXUZbZaCMueB2XPdNIwqGEoU24fQ0rbnZ0N++Iq13L/H8bqrCx+mN9VH5ele+QFJrJ9IAIlX1VVsodDHib1fICw0JPsnJbv76jo7iovGlM2MtJM0TvC3C6XyaclJQjLSsFIZK+WBWW2X2DriMdT7CMpZd0mQnmBD3wyZ1Za+hOsrWi19jp5imlEm894hJUc="
+
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar

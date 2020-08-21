@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/imrafaelmerino/mongo-values.svg?branch=master)](https://travis-ci.org/imrafaelmerino/mongo-values)
 [![CircleCI](https://circleci.com/gh/imrafaelmerino/mongo-values/tree/master.svg)](https://circleci.com/gh/imrafaelmerino/mongo-values/tree/master)
-[![codecov](https://codecov.io/gh/imrafaelmerino/json-values/branch/master/graph/badge.svg)](https://codecov.io/gh/imrafaelmerino/json-values)
+[![codecov](https://codecov.io/gh/imrafaelmerino/mongo-values/branch/master/graph/badge.svg)](https://codecov.io/gh/imrafaelmerino/vertx-values)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=imrafaelmerino_mongo-values&metric=alert_status)](https://sonarcloud.io/dashboard?id=imrafaelmerino_mongo-values)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=imrafaelmerino_mongo-values&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=imrafaelmerino_mongo-values)

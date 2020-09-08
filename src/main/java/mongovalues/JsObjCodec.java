@@ -81,9 +81,6 @@ class JsObjCodec extends JsonCodec implements Codec<JsObj> {
     if(value.isObj(o->o.containsKey("$oid"))){
       writer.writeObjectId(new ObjectId(value.toJsObj().getStr("$oid")));
     }
-    else{
-      writer.writeObjectId(new ObjectId(value.toString()));
-    }
   }
 
   private void encodeObj(final BsonWriter writer,

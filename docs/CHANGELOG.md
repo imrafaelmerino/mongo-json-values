@@ -1,5 +1,5 @@
 # MONGO-VALUES
-## v0.1  ( Fri Aug 21 2020 21:01:05 GMT+0200 (Central European Summer Time) )
+## v0.2  ( Fri Aug 21 2020 21:01:05 GMT+0200 (Central European Summer Time) )
 
 ## Bug Fixes
   - 🐛 sonarcloud integration

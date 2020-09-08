@@ -6,7 +6,7 @@
   <groupId>com.github.imrafaelmerino</groupId>
   <artifactId>mongo-values</artifactId>
   <packaging>jar</packaging>
-  <version>0.1</version>
+  <version>0.2</version>
   <name>mongo-values</name>
   <description>Codecs to work with the persistent objects from json-values in MongoDb with the Java driver.</description>
   <url>https://github.com/imrafaelmerino/vertx-actors</url>

@@ -89,8 +89,7 @@ class JsObjCodec extends JsonCodec implements Codec<JsObj> {
     private void encodeObj(final BsonWriter writer,
                            final JsObj obj,
                            final EncoderContext context) {
-        for (Iterator<Tuple2<String, JsValue>> it = obj.delete(ID_FIELD_NAME)
-                                                       .iterator(); it.hasNext(); ) {
+        for (Iterator<Tuple2<String, JsValue>> it = obj.iterator(); it.hasNext(); ) {
             final Tuple2<String, JsValue> entry = it.next();
             writer.writeName(entry._1);
             Codec codec = registry.get(entry._2.getClass());

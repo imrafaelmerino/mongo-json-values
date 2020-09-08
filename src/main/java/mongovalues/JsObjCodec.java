@@ -64,23 +64,25 @@ class JsObjCodec extends JsonCodec implements Codec<JsObj> {
                );
     }
     else{
-      encodeObjId(writer,
-                 id
-                 );
+      boolean encoded = encodeObjId(writer,
+                              id
+                             );
       encodeObj(writer,
-                obj.delete(ID_FIELD_NAME),
+                encoded ? obj.delete(ID_FIELD_NAME) : obj,
                 context
                );
     }
     writer.writeEndDocument();
   }
 
-  private void encodeObjId(final BsonWriter writer,
+  private boolean encodeObjId(final BsonWriter writer,
                            final JsValue value) {
-    writer.writeName(ID_FIELD_NAME);
     if(value.isObj(o->o.containsKey("$oid"))){
+      writer.writeName(ID_FIELD_NAME);
       writer.writeObjectId(new ObjectId(value.toJsObj().getStr("$oid")));
+      return true;
     }
+    return false;
   }
 
   private void encodeObj(final BsonWriter writer,

@@ -1,15 +1,17 @@
 # MONGO-VALUES
-## v0.2  ( Fri Aug 21 2020 21:01:05 GMT+0200 (Central European Summer Time) )
+## v0.3  ( Tue Sep 08 2020 16:50:25 GMT+0200 (Central European Summer Time) )
+
 
 ## Bug Fixes
-  - 🐛 sonarcloud integration
-  ([38cfdc7c](https://github.com/imrafaelmerino/mongo-json-values/commit/38cfdc7c41250da7d098a6289b183890cbccdb60))
-  - 🐛 sonarcloud integration
-  ([f5f959e1](https://github.com/imrafaelmerino/mongo-json-values/commit/f5f959e1d095c9babb4ed63cfc5a346b1193c5ea))
+  - 🐛 version readme
+  ([6278fb42](https://github.com/imrafaelmerino/mongo-json-values/commit/6278fb425facfddd1f5b1657dba6df076efe1a2b))
+  - 🐛 maven central integration
+  ([79c1e67e](https://github.com/imrafaelmerino/mongo-json-values/commit/79c1e67e25201472b98c4038c1f83ce37b9bd844))
 
-## Refactor
-  - 💡 rename classes
-  ([5d5814cf](https://github.com/imrafaelmerino/mongo-json-values/commit/5d5814cf6bc2067a70b5538f5af5d27897bdbbdd))
+
+## Branchs merged
+  - Merge branch 'master' of https://github.com/imrafaelmerino/mongo-json-values
+  ([658f7551](https://github.com/imrafaelmerino/mongo-json-values/commit/658f7551befd38eacff6de6ffa73f85a5540c93f))
 
 
 

@@ -13,7 +13,7 @@
         <profile>
             <id>release</id>
             <properties>
-                <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
+                <gpg.passphrase>${env.PGP_PASSPHRASE}</gpg.passphrase>
             </properties>
         </profile>
     </profiles>

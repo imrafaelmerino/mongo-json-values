@@ -1,10 +1,9 @@
 # MONGO-VALUES
-## v0.5  ( Tue Sep 08 2020 19:28:30 GMT+0200 (Central European Summer Time) )
+## v0.6  ( Tue Nov 10 2020 20:12:55 GMT+0100 (Central European Standard Time) )
 
 
-## Bug Fixes
-  - 🐛 _id is removed when specified
-  ([3340920a](https://github.com/imrafaelmerino/mongo-json-values/commit/3340920ad2647c9da0b5435eb62576928f4337e3))
+## Features
+  - 🎸 upgrade mongo sync driver 4.1.1!
 
 
 

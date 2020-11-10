@@ -1,10 +1,6 @@
 [![Build Status](https://travis-ci.org/imrafaelmerino/mongo-values.svg?branch=master)](https://travis-ci.org/imrafaelmerino/mongo-values)
 [![CircleCI](https://circleci.com/gh/imrafaelmerino/mongo-values/tree/master.svg)](https://circleci.com/gh/imrafaelmerino/mongo-values/tree/master)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=imrafaelmerino_mongo-values&metric=alert_status)](https://sonarcloud.io/dashboard?id=imrafaelmerino_mongo-values)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=imrafaelmerino_mongo-values&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=imrafaelmerino_mongo-values)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 [![Javadocs](https://www.javadoc.io/badge/com.github.imrafaelmerino/mongo-values.svg)](https://www.javadoc.io/doc/com.github.imrafaelmerino/mongo-values)
 [![Maven](https://img.shields.io/maven-central/v/com.github.imrafaelmerino/mongo-values/0.6)](https://search.maven.org/artifact/com.github.imrafaelmerino/mongo-values/0.6/jar)
 [![](https://jitpack.io/v/imrafaelmerino/mongo-values.svg)](https://jitpack.io/#imrafaelmerino/mongo-values)

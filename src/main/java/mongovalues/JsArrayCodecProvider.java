@@ -8,13 +8,14 @@ import org.bson.codecs.configuration.CodecRegistry;
 
 class JsArrayCodecProvider implements CodecProvider {
 
-    private BsonTypeClassMap typeClassMap;
+    private final BsonTypeClassMap typeClassMap;
 
     public JsArrayCodecProvider(final BsonTypeClassMap typeClassMap) {
         this.typeClassMap = typeClassMap;
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public <T> Codec<T> get(final Class<T> aclass,
                             final CodecRegistry codecRegistry) {
         if (aclass == JsArray.class) {

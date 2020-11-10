@@ -6,7 +6,7 @@
   <groupId>com.github.imrafaelmerino</groupId>
   <artifactId>mongo-values</artifactId>
   <packaging>jar</packaging>
-  <version>0.5</version>
+  <version>0.6</version>
   <name>mongo-values</name>
   <description>Set of codecs to add support for json-values in the java mongo driver, abstracting the process of decoding a BSON into a JsObj and encoding a JsObj into a BSON.</description>
   <url>https://github.com/imrafaelmerino/mongo-values</url>
@@ -40,7 +40,7 @@
     <MAVEN-COMPILER-PLUGIN.SOURCE>8</MAVEN-COMPILER-PLUGIN.SOURCE>
     <MAVEN-COMPILER-PLUGIN.TARGET>8</MAVEN-COMPILER-PLUGIN.TARGET>
     <JSON-VALUES.VERSION>8.4.0</JSON-VALUES.VERSION>
-    <MONGO-JAVA-DRIVER.VERSION>4.0.5</MONGO-JAVA-DRIVER.VERSION>
+    <MONGO-JAVA-DRIVER.VERSION>4.1.1</MONGO-JAVA-DRIVER.VERSION>
   </properties>
 
   <build>
